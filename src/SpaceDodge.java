@@ -152,7 +152,7 @@ public class SpaceDodge extends Application {
         scoreText.setText("Очки: 0");
 
         // Начальный экран
-        Text startText = new Text("Нажмите ENTER для старта");
+        Text startText = new Text("Нажмите C для старта");
         startText.setFill(Color.BLACK);
         startText.setFont(Font.font(24));
         startText.setX(W / 2 - 130);
@@ -163,7 +163,7 @@ public class SpaceDodge extends Application {
 
         // Обработка старта
         root.getScene().setOnKeyPressed(event -> {
-            if (event.getCode().toString().equals("ENTER")) {
+            if (event.getCode().toString().equals("C")) {
                 root.getChildren().remove(startText);
                 startGame(root);
             }
